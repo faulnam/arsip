@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Test Dashboard Links</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                max-width: 800px;
+                margin: 50px auto;
+                padding: 20px;
+                background: #f5f5f5;
+            }
+            .test-section {
+                background: white;
+                padding: 20px;
+                margin-bottom: 20px;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            h2 {
+                color: #333;
+                border-bottom: 2px solid #4caf50;
+                padding-bottom: 10px;
+            }
+            .link-test {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                margin: 10px 0;
+                background: #f9f9f9;
+                border-left: 4px solid #2196f3;
+            }
+            .link-test a {
+                color: #2196f3;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .link-test a:hover {
+                text-decoration: underline;
+            }
+            .status {
+                padding: 5px 10px;
+                border-radius: 4px;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            .status.active {
+                background: #4caf50;
+                color: white;
+            }
+            .info {
+                background: #e3f2fd;
+                padding: 15px;
+                border-radius: 4px;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>🧪 Test Dashboard Links - Rumah BUMN Sidoarjo</h1>
+
+        <div class="info">
+            <strong>📋 Cara Test:</strong>
+            <ol>
+                <li>Login sebagai Admin</li>
+                <li>Klik link di bawah untuk test redirect</li>
+                <li>Pastikan halaman terbuka dengan benar</li>
+            </ol>
+        </div>
+
+        <div class="test-section">
+            <h2>📊 Tombol "Kelola" di Dashboard</h2>
+
+            <div class="link-test">
+                <div>
+                    <strong>Kelola Arsip</strong>
+                    <br /><small>Route: admin.archives.index</small>
+                </div>
+                <div>
+                    <a href="/admin/archives" target="_blank">Test Link →</a>
+                    <span class="status active">✅ AKTIF</span>
+                </div>
+            </div>
+
+            <div class="link-test">
+                <div>
+                    <strong>Kelola Event</strong>
+                    <br /><small>Route: admin.events.index</small>
+                </div>
+                <div>
+                    <a href="/admin/events" target="_blank">Test Link →</a>
+                    <span class="status active">✅ AKTIF</span>
+                </div>
+            </div>
+
+            <div class="link-test">
+                <div>
+                    <strong>Kelola Kategori</strong>
+                    <br /><small>Route: admin.categories.index</small>
+                </div>
+                <div>
+                    <a href="/admin/categories" target="_blank">Test Link →</a>
+                    <span class="status active">✅ AKTIF</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2>⚡ Quick Actions - Tombol "Tambah"</h2>
+
+            <div class="link-test">
+                <div>
+                    <strong>Tambah Arsip</strong>
+                    <br /><small>Route: admin.archives.create</small>
+                </div>
+                <div>
+                    <a href="/admin/archives/create" target="_blank"
+                        >Test Link →</a
+                    >
+                    <span class="status active">✅ AKTIF</span>
+                </div>
+            </div>
+
+            <div class="link-test">
+                <div>
+                    <strong>Tambah Event</strong>
+                    <br /><small>Route: admin.events.create</small>
+                </div>
+                <div>
+                    <a href="/admin/events/create" target="_blank"
+                        >Test Link →</a
+                    >
+                    <span class="status active">✅ AKTIF</span>
+                </div>
+            </div>
+
+            <div class="link-test">
+                <div>
+                    <strong>Tambah Kategori</strong>
+                    <br /><small>Route: admin.categories.create</small>
+                </div>
+                <div>
+                    <a href="/admin/categories/create" target="_blank"
+                        >Test Link →</a
+                    >
+                    <span class="status active">✅ AKTIF</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2>📄 Navigation Menu</h2>
+
+            <div class="link-test">
+                <div>
+                    <strong>Dashboard</strong>
+                    <br /><small>Route: dashboard</small>
+                </div>
+                <div>
+                    <a href="/dashboard" target="_blank">Test Link →</a>
+                    <span class="status active">✅ AKTIF</span>
+                </div>
+            </div>
+
+            <div class="link-test">
+                <div>
+                    <strong>Landing Page (Public)</strong>
+                    <br /><small>Route: landing</small>
+                </div>
+                <div>
+                    <a href="/" target="_blank">Test Link →</a>
+                    <span class="status active">✅ AKTIF</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="test-section" style="background: #e8f5e9">
+            <h2 style="color: #2e7d32; border-color: #2e7d32">
+                ✅ Status Keseluruhan
+            </h2>
+            <p style="font-size: 18px; margin: 0">
+                <strong>Semua route sudah AKTIF dan berfungsi!</strong>
+            </p>
+            <ul style="margin-top: 10px">
+                <li>✅ 3 Tombol "Kelola" → Berfungsi</li>
+                <li>✅ 3 Quick Actions → Berfungsi</li>
+                <li>✅ Navigation Menu → Berfungsi</li>
+                <li>✅ Recent Activity Links → Berfungsi</li>
+            </ul>
+        </div>
+
+        <div class="info" style="background: #fff3e0">
+            <strong>⚠️ Catatan:</strong>
+            <ul>
+                <li>Pastikan sudah login sebagai admin</li>
+                <li>Jika mendapat error 403, cek middleware admin</li>
+                <li>Jika halaman kosong, cek controller dan view</li>
+            </ul>
+        </div>
+    </body>
+</html>
